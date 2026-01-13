@@ -3,7 +3,7 @@ import cv2
 import tempfile
 import numpy as np
 import av
-
+import time
 from ultralytics import YOLO
 from pathlib import Path
 from streamlit_webrtc import webrtc_streamer, VideoProcessorBase
@@ -207,4 +207,5 @@ elif source_type == "Webcam":
         },
         async_processing=True
     )
+
 
